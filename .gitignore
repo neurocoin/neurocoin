@@ -29,3 +29,5 @@ dist
 *.app
 *.dmg
 .idea
+cmake-build-debug
+CMakeLists.txt
