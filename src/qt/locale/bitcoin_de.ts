@@ -293,7 +293,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <name>PPCoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="69"/>
-        <source>NeuroCoin Wallet</source>
+        <source>Neuro Wallet</source>
         <translation>PPCoin-Brieftasche</translation>
     </message>
     <message>

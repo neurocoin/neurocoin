@@ -288,7 +288,7 @@ Biztosan kódolni akarod a tárcát?</translation>
     <name>PPCoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="69"/>
-        <source>NeuroCoin Wallet</source>
+        <source>Neuro Wallet</source>
         <translation>PPCoin-tárca</translation>
     </message>
     <message>

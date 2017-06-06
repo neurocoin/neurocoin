@@ -295,7 +295,7 @@ Bent u er zeker van uw dat u uw portemonnee wilt versleutelen?</translation>
     <name>PPCoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="69"/>
-        <source>NeuroCoin Wallet</source>
+        <source>Neuro Wallet</source>
         <translation>PPCoin-portemonnee</translation>
     </message>
     <message>

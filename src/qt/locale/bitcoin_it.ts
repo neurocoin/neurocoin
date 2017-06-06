@@ -294,7 +294,7 @@ Si è sicuri di voler cifrare il portamonete?</translation>
     <name>PPCoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="69"/>
-        <source>NeuroCoin Wallet</source>
+        <source>Neuro Wallet</source>
         <translation>Portamonete di PPCoin</translation>
     </message>
     <message>

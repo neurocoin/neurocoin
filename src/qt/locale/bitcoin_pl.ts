@@ -299,7 +299,7 @@ Czy na pewno chcesz zaszyfrować swój portfel?</translation>
     <name>PPCoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="69"/>
-        <source>NeuroCoin Wallet</source>
+        <source>Neuro Wallet</source>
         <translation>Portfel PPCoin</translation>
     </message>
     <message>

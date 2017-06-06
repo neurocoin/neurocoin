@@ -288,7 +288,7 @@ Er du sikker på at du ønsker at kryptere din tegnebog?</translation>
     <name>PPCoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="69"/>
-        <source>NeuroCoin Wallet</source>
+        <source>Neuro Wallet</source>
         <translation>PPCoin Tegnebog</translation>
     </message>
     <message>

@@ -295,7 +295,7 @@ Ar jūs tikrai norite užšifruoti savo piniginę?</translation>
     <name>PPCoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="69"/>
-        <source>NeuroCoin Wallet</source>
+        <source>Neuro Wallet</source>
         <translation>Bitkoinų piniginė</translation>
     </message>
     <message>

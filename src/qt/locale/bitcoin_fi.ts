@@ -294,7 +294,7 @@ Tahdotko varmasti salata lompakon?</translation>
     <name>PPCoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="69"/>
-        <source>NeuroCoin Wallet</source>
+        <source>Neuro Wallet</source>
         <translation>PPCoin-lompakko</translation>
     </message>
     <message>
