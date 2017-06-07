@@ -85,6 +85,7 @@ private:
     QAction *toggleHideAction;
     QAction *exportAction;
     QAction *encryptWalletAction;
+    QAction *lockUnlockWalletAction;
     QAction *backupWalletAction;
     QAction *changePassphraseAction;
     QAction *aboutQtAction;
@@ -116,6 +117,7 @@ public slots:
        @see WalletModel::EncryptionStatus
     */
     void setEncryptionStatus(int status);
+    void updateEncryptionStatus();
 
     /** Notify the user of an error in the network or transaction handling code. */
     void error(const QString &title, const QString &message, bool modal);
@@ -160,6 +162,7 @@ private slots:
     void incomingTransaction(const QModelIndex & parent, int start, int end);
     /** Encrypt the wallet */
     void encryptWallet(bool status);
+    void lockUnlockWallet(bool status);
     /** Backup the wallet */
     void backupWallet();
     /** Change encrypted wallet passphrase */

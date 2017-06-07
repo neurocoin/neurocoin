@@ -64,6 +64,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     clientModel(0),
     walletModel(0),
     encryptWalletAction(0),
+    lockUnlockWalletAction(0),
     changePassphraseAction(0),
     aboutQtAction(0),
     trayIcon(0),
@@ -246,9 +247,15 @@ void BitcoinGUI::createActions()
     toggleHideAction->setToolTip(tr("Show or hide the NeuroCoin window"));
     exportAction = new QAction(QIcon(":/icons/export"), tr("&Export..."), this);
     exportAction->setToolTip(tr("Export the data in the current tab to a file"));
+
     encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet"), this);
     encryptWalletAction->setToolTip(tr("Encrypt or decrypt wallet"));
     encryptWalletAction->setCheckable(true);
+
+    lockUnlockWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Lock Wallet"), this);
+    lockUnlockWalletAction->setToolTip(tr("Lock/unlock wallet"));
+    lockUnlockWalletAction->setCheckable(true);
+
     backupWalletAction = new QAction(QIcon(":/icons/filesave"), tr("&Backup Wallet"), this);
     backupWalletAction->setToolTip(tr("Backup wallet to another location"));
     changePassphraseAction = new QAction(QIcon(":/icons/key"), tr("&Change Passphrase"), this);
@@ -262,6 +269,7 @@ void BitcoinGUI::createActions()
     connect(aboutQtAction, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
     connect(toggleHideAction, SIGNAL(triggered()), this, SLOT(toggleHidden()));
     connect(encryptWalletAction, SIGNAL(triggered(bool)), this, SLOT(encryptWallet(bool)));
+    connect(lockUnlockWalletAction, SIGNAL(triggered(bool)), this, SLOT(lockUnlockWallet(bool)));
     connect(backupWalletAction, SIGNAL(triggered()), this, SLOT(backupWallet()));
     connect(changePassphraseAction, SIGNAL(triggered()), this, SLOT(changePassphrase()));
 }
@@ -287,7 +295,8 @@ void BitcoinGUI::createMenuBar()
     file->addAction(quitAction);
 
     QMenu *settings = appMenuBar->addMenu(tr("&Settings"));
-    //settings->addAction(encryptWalletAction);
+    settings->addAction(encryptWalletAction);
+    settings->addAction(lockUnlockWalletAction);
     settings->addAction(changePassphraseAction);
     settings->addSeparator();
     settings->addAction(optionsAction);
@@ -776,46 +785,74 @@ void BitcoinGUI::handleURI(QString strURI)
     showNormalIfMinimized();
 }
 
-void BitcoinGUI::setEncryptionStatus(int status)
-{
-    switch(status)
-    {
-    case WalletModel::Unencrypted:
-        labelEncryptionIcon->hide();
-        encryptWalletAction->setChecked(false);
-        changePassphraseAction->setEnabled(false);
-        encryptWalletAction->setEnabled(true);
-        break;
-    case WalletModel::Unlocked:
-        labelEncryptionIcon->show();
-        labelEncryptionIcon->setPixmap(QIcon(":/icons/lock_open").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-        labelEncryptionIcon->setToolTip(fWalletUnlockMintOnly? tr("Wallet is <b>encrypted</b> and currently <b>unlocked for block minting only</b>") : tr("Wallet is <b>encrypted</b> and currently <b>unlocked</b>"));
-        encryptWalletAction->setChecked(true);
-        changePassphraseAction->setEnabled(true);
-        encryptWalletAction->setEnabled(false); // TODO: decrypt currently not supported
-        break;
-    case WalletModel::Locked:
-        labelEncryptionIcon->show();
-        labelEncryptionIcon->setPixmap(QIcon(":/icons/lock_closed").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-        labelEncryptionIcon->setToolTip(tr("Wallet is <b>encrypted</b> and currently <b>locked</b>"));
-        encryptWalletAction->setChecked(true);
-        changePassphraseAction->setEnabled(true);
-        encryptWalletAction->setEnabled(false); // TODO: decrypt currently not supported
-        break;
+void BitcoinGUI::updateEncryptionStatus() {
+    setEncryptionStatus(walletModel->getEncryptionStatus());
+}
+
+void BitcoinGUI::setEncryptionStatus(int status) {
+    switch (status) {
+        case WalletModel::Unencrypted:
+            labelEncryptionIcon->hide();
+            encryptWalletAction->setChecked(false);
+            encryptWalletAction->setEnabled(true);
+            changePassphraseAction->setEnabled(false);
+            lockUnlockWalletAction->setChecked(false);
+            lockUnlockWalletAction->setEnabled(false);
+            break;
+        case WalletModel::Unlocked:
+            labelEncryptionIcon->show();
+            labelEncryptionIcon->setPixmap(QIcon(":/icons/lock_open").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
+            labelEncryptionIcon->setToolTip(fWalletUnlockMintOnly ? tr(
+                    "Wallet is <b>encrypted</b> and currently <b>unlocked for block minting only</b>") : tr(
+                    "Wallet is <b>encrypted</b> and currently <b>unlocked</b>"));
+            encryptWalletAction->setChecked(true);
+            encryptWalletAction->setEnabled(false); // TODO: decrypt currently not supported
+            changePassphraseAction->setEnabled(true);
+            lockUnlockWalletAction->setChecked(false);
+            lockUnlockWalletAction->setEnabled(true);
+            break;
+        case WalletModel::Locked:
+            labelEncryptionIcon->show();
+            labelEncryptionIcon->setPixmap(QIcon(":/icons/lock_closed").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
+            labelEncryptionIcon->setToolTip(tr("Wallet is <b>encrypted</b> and currently <b>locked</b>"));
+            encryptWalletAction->setChecked(true);
+            encryptWalletAction->setEnabled(false); // TODO: decrypt currently not supported
+            changePassphraseAction->setEnabled(true);
+            lockUnlockWalletAction->setChecked(true);
+            lockUnlockWalletAction->setEnabled(true);
+            break;
     }
 }
 
 void BitcoinGUI::encryptWallet(bool status)
 {
-    if(!walletModel)
+    if(!walletModel) {
         return;
+    }
+
     AskPassphraseDialog dlg(status ? AskPassphraseDialog::Encrypt:
                                      AskPassphraseDialog::Decrypt, this);
     dlg.setModel(walletModel);
     dlg.exec();
 
-    setEncryptionStatus(walletModel->getEncryptionStatus());
+    updateEncryptionStatus();
 }
+
+void BitcoinGUI::lockUnlockWallet(bool doLock) {
+    if(!walletModel) {
+        return;
+    }
+    if (doLock) {
+        SecureString passPhrase;
+        walletModel->setWalletLocked(true, passPhrase);
+    } else {
+        AskPassphraseDialog dlg(AskPassphraseDialog::Unlock, this);
+        dlg.setModel(walletModel);
+        dlg.exec();
+    }
+    updateEncryptionStatus();
+}
+
 
 void BitcoinGUI::backupWallet()
 {
