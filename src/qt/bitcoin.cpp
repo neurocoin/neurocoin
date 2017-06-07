@@ -181,9 +181,9 @@ int main(int argc, char *argv[])
     app.setOrganizationName("NeuroCoin");
     app.setOrganizationDomain("neurocoin.org");
     if(GetBoolArg("-testnet")) // Separate UI settings for testnet
-        app.setApplicationName("NeuroCoin-Qt-testnet");
+        app.setApplicationName("Neuro-Qt-testnet");
     else
-        app.setApplicationName("NeuroCoin-Qt");
+        app.setApplicationName("Neuro-Qt");
 
     // ... then GUI settings:
     OptionsModel optionsModel;
