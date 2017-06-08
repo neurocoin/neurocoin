@@ -1001,8 +1001,9 @@ void MapPort(bool /* unused fMapPort */)
 // The second name should resolve to a list of seed addresses.
 // testnet dns seed begins with 't', all else are ppcoin dns seeds.
 static const char *strDNSSeed[][2] = {
-    {"one", "46.101.192.195"},
-    {"two", "188.226.150.84"},
+    {"server-1", "46.101.192.195"},
+    {"server-2", "188.226.150.84"},
+    {"server-cryptoid-explorer", "147.135.191.162"},
 
     //{"seed", "seed.neurocoin.org"},
     //{"seed", "dnsseed.neurocoin.org"},
