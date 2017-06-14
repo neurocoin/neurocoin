@@ -15,6 +15,7 @@ src/build.h
 *.qm
 Makefile
 neurocoin-qt
+neuro-qt
 #resources cpp
 qrc_*.cpp
 #qt creator
