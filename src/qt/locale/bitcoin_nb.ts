@@ -1666,12 +1666,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../bitcoinstrings.cpp" line="9"/>
         <source>Specify configuration file (default: neurocoin.conf)</source>
-        <translation>Angi konfigurasjonsfil (standardverdi: PPCoin.conf)</translation>
+        <translation>Angi konfigurasjonsfil (standardverdi: neurocoin.conf)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="10"/>
         <source>Specify pid file (default: neurocoin.pid)</source>
-        <translation>Angi pid-fil (standardverdi: ppcoind.pid)</translation>
+        <translation>Angi pid-fil (standardverdi: neurocoind.pid)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="11"/>

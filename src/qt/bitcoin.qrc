@@ -81,7 +81,7 @@
         <!--<file alias="sv">locale/bitcoin_sv.qm</file>-->
         <!--<file alias="tr">locale/bitcoin_tr.qm</file>-->
         <!--<file alias="uk">locale/bitcoin_uk.qm</file>-->
-        <!--<file alias="zh_CN">locale/bitcoin_zh_CN.qm</file>-->
-        <!--<file alias="zh_TW">locale/bitcoin_zh_TW.qm</file>-->
+        <file alias="zh_CN">locale/bitcoin_zh_CN.qm</file>
+        <file alias="zh_TW">locale/bitcoin_zh_TW.qm</file>
     </qresource>
 </RCC>

@@ -1655,12 +1655,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../bitcoinstrings.cpp" line="9"/>
         <source>Specify configuration file (default: neurocoin.conf)</source>
-        <translation>Určiť súbor s nastaveniami (predvolené: PPCoin.conf)</translation>
+        <translation>Určiť súbor s nastaveniami (predvolené: neurocoin.conf)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="10"/>
         <source>Specify pid file (default: neurocoin.pid)</source>
-        <translation>Určiť súbor pid (predvolené: ppcoind.pid)</translation>
+        <translation>Určiť súbor pid (predvolené: neurocoind.pid)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="11"/>

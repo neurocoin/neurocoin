@@ -1671,7 +1671,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../bitcoinstrings.cpp" line="9"/>
         <source>Specify configuration file (default: neurocoin.conf)</source>
-        <translation>Wskaż plik konfiguracyjny (domyślnie: PPCoin.conf)</translation>
+        <translation>Wskaż plik konfiguracyjny (domyślnie: neurocoin.conf)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="10"/>

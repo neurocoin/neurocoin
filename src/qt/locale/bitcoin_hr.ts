@@ -1660,7 +1660,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../bitcoinstrings.cpp" line="9"/>
         <source>Specify configuration file (default: neurocoin.conf)</source>
-        <translation>Odredi konfiguracijsku datoteku (ugrađeni izbor: PPCoin.conf)</translation>
+        <translation>Odredi konfiguracijsku datoteku (ugrađeni izbor: neurocoin.conf)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="10"/>

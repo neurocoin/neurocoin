@@ -1665,12 +1665,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../bitcoinstrings.cpp" line="9"/>
         <source>Specify configuration file (default: neurocoin.conf)</source>
-        <translation>ציין קובץ הגדרות (ברירת מחדל: PPCoin.conf)</translation>
+        <translation>ציין קובץ הגדרות (ברירת מחדל: neurocoin.conf)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="10"/>
         <source>Specify pid file (default: neurocoin.pid)</source>
-        <translation>ציין קובץ pid (ברירת מחדל: ppcoind.pid)</translation>
+        <translation>ציין קובץ pid (ברירת מחדל: neurocoind.pid)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="11"/>

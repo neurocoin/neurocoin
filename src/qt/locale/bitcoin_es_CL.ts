@@ -1663,7 +1663,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../bitcoinstrings.cpp" line="9"/>
         <source>Specify configuration file (default: neurocoin.conf)</source>
-        <translation>Especifica archivo de configuración (predeterminado: PPCoin.conf)
+        <translation>Especifica archivo de configuración (predeterminado: neurocoin.conf)
 </translation>
     </message>
     <message>

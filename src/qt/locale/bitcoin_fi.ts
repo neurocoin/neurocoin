@@ -1665,7 +1665,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../bitcoinstrings.cpp" line="9"/>
         <source>Specify configuration file (default: neurocoin.conf)</source>
-        <translation>Määritä asetustiedosto (oletus: PPCoin.conf)</translation>
+        <translation>Määritä asetustiedosto (oletus: neurocoin.conf)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="10"/>

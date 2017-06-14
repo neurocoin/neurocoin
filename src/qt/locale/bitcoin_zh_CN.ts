@@ -491,7 +491,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../bitcoingui.cpp" line="407"/>
         <source>NeuroCoin-qt</source>
-        <translation>PPCoin-qt</translation>
+        <translation>NeuroCoin-qt</translation>
     </message>
     <message numerus="yes">
         <location filename="../bitcoingui.cpp" line="449"/>
@@ -1646,7 +1646,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../bitcoinstrings.cpp" line="5"/>
         <source>Send command to -server or neurocoind</source>
-        <translation>发送命令到服务器或者 ppcoind
+        <translation>发送命令到服务器或者 neurocoind
 </translation>
     </message>
     <message>
@@ -1670,13 +1670,13 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../bitcoinstrings.cpp" line="9"/>
         <source>Specify configuration file (default: neurocoin.conf)</source>
-        <translation>指定配置文件 (默认为 PPCoin.conf)
+        <translation>指定配置文件 (默认为 neurocoin.conf)
 </translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="10"/>
         <source>Specify pid file (default: neurocoin.pid)</source>
-        <translation>指定 pid 文件 (默认为 ppcoind.pid)
+        <translation>指定 pid 文件 (默认为 neurocoin.pid)
 </translation>
     </message>
     <message>
@@ -1936,12 +1936,12 @@ SSL 选项: (SSL 安装教程具体见比特币维基百科)
     <message>
         <location filename="../bitcoinstrings.cpp" line="66"/>
         <source>Error loading wallet.dat: Wallet requires newer version of NeuroCoin</source>
-        <translation>wallet.dat钱包文件加载错误：请升级到最新PPCoin客户端</translation>
+        <translation>wallet.dat钱包文件加载错误：请升级到最新Neuro客户端</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="67"/>
         <source>Wallet needed to be rewritten: restart NeuroCoin to complete</source>
-        <translation>钱包文件需要重写：请退出并重新启动PPCoin客户端</translation>
+        <translation>钱包文件需要重写：请退出并重新启动Neurof客户端</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="68"/>

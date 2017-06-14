@@ -21,7 +21,7 @@ This is experimental software.
 Distributed under the MIT/X11 software license, see the accompanying file license.txt or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>版權為 PPCoin 開發人員自西元 2009 至 2012 年起所有
+        <translation>版權為 NeuroCoin 開發人員自西元 2009 至 2012 年起所有
 
 這是個實驗性的軟體.
 
@@ -491,7 +491,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../bitcoingui.cpp" line="407"/>
         <source>NeuroCoin-qt</source>
-        <translation>PPCoin-qt</translation>
+        <translation>NeuroCoin-qt</translation>
     </message>
     <message numerus="yes">
         <location filename="../bitcoingui.cpp" line="449"/>
@@ -1645,7 +1645,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../bitcoinstrings.cpp" line="5"/>
         <source>Send command to -server or neurocoind</source>
-        <translation>送指令至 -server 或 ppcoind
+        <translation>送指令至 -server 或 neurocoind
 </translation>
     </message>
     <message>
@@ -1669,13 +1669,13 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../bitcoinstrings.cpp" line="9"/>
         <source>Specify configuration file (default: neurocoin.conf)</source>
-        <translation>指定設定檔 (預設: PPCoin.conf)
+        <translation>指定設定檔 (預設: neurocoin.conf)
 </translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="10"/>
         <source>Specify pid file (default: neurocoin.pid)</source>
-        <translation>指定行程識別碼檔案 (預設: ppcoind.pid)
+        <translation>指定行程識別碼檔案 (預設: neurocoind.pid)
 </translation>
     </message>
     <message>
@@ -1869,7 +1869,7 @@ p, li { white-space: pre-wrap; }
         <source>
 SSL options: (see the NeuroCoin Wiki for SSL setup instructions)</source>
         <translation>
-SSL 選項: (SSL 設定程序請見 PPCoin Wiki)
+SSL 選項: (SSL 設定程序請見 NeuroCoin Wiki)
 </translation>
     </message>
     <message>
@@ -1930,7 +1930,7 @@ SSL 選項: (SSL 設定程序請見 PPCoin Wiki)
     <message>
         <location filename="../bitcoinstrings.cpp" line="66"/>
         <source>Error loading wallet.dat: Wallet requires newer version of NeuroCoin</source>
-        <translation>載入 wallet.dat 失敗: 此錢包需要新版的 PPCoin</translation>
+        <translation>載入 wallet.dat 失敗: 此錢包需要新版的 NeuroCoin</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="67"/>
@@ -1990,7 +1990,7 @@ SSL 選項: (SSL 設定程序請見 PPCoin Wiki)
     <message>
         <location filename="../bitcoinstrings.cpp" line="78"/>
         <source>Unable to bind to port %d on this computer.  NeuroCoin is probably already running.</source>
-        <translation>無法與這台電腦上的通訊埠 %d 連結. 也許 PPCoin 已經在執行了.</translation>
+        <translation>無法與這台電腦上的通訊埠 %d 連結. 也許 NeuroCoin 已經在執行了.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="81"/>

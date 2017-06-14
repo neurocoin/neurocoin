@@ -1665,13 +1665,13 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../bitcoinstrings.cpp" line="9"/>
         <source>Specify configuration file (default: neurocoin.conf)</source>
-        <translation>Konfigurációs fájl (alapértelmezett: PPCoin.conf)
+        <translation>Konfigurációs fájl (alapértelmezett: neurocoin.conf)
 </translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="10"/>
         <source>Specify pid file (default: neurocoin.pid)</source>
-        <translation>pid-fájl (alapértelmezett: ppcoind.pid)
+        <translation>pid-fájl (alapértelmezett: neurocoind.pid)
 </translation>
     </message>
     <message>
