@@ -43,7 +43,7 @@ const std::string CLIENT_NAME("Satoshi");
 #define STRINGIFY(s) #s
 
 #define BUILD_DESC_FROM_COMMIT(maj,min,rev,build,commit) \
-    STRINGIFY(maj) "." STRINGIFY(min) "." STRINGIFY(rev) " rev. " commit
+    STRINGIFY(maj) "." STRINGIFY(min) "." STRINGIFY(rev) "." commit
 
 #define BUILD_DESC_FROM_UNKNOWN(maj,min,rev,build) \
     STRINGIFY(maj) "." STRINGIFY(min) "." STRINGIFY(rev)

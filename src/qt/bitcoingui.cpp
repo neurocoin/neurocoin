@@ -305,7 +305,7 @@ void BitcoinGUI::createMenuBar()
     help->addAction(openRPCConsoleAction);
     help->addSeparator();
     help->addAction(aboutAction);
-    help->addAction(aboutQtAction);
+    //help->addAction(aboutQtAction);
 }
 
 void BitcoinGUI::createToolBars()
