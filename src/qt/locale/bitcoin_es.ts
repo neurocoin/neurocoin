@@ -5,7 +5,7 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="14"/>
         <source>About NeuroCoin</source>
-        <translation>Sobre PPCoin</translation>
+        <translation>Sobre Neuro</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="53"/>
@@ -34,7 +34,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../forms/addressbookpage.ui" line="20"/>
         <source>These are your NeuroCoin addresses for receiving payments.  You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Estas son tus direcciones PPCoin para recibir pagos. Puedes utilizar una diferente por cada persona emisora para saber quien te está pagando.</translation>
+        <translation>Estas son tus direcciones Neuro para recibir pagos. Puedes utilizar una diferente por cada persona emisora para saber quien te está pagando.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="33"/>
@@ -222,7 +222,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location filename="../askpassphrasedialog.cpp" line="102"/>
         <source>WARNING: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NEUROCOINS&lt;/b&gt;!
 Are you sure you wish to encrypt your wallet?</source>
-        <translation>ATENCION: ¡Si encriptas tu cartera y pierdes la contraseña perderas &lt;b&gt;TODOS TUS PPCoinS&lt;/b&gt;!&quot;
+        <translation>ATENCION: ¡Si encriptas tu cartera y pierdes la contraseña perderas &lt;b&gt;TODOS TUS NEUROS&lt;/b&gt;!&quot;
 ¿Seguro que quieres seguir encriptando la cartera?</translation>
     </message>
     <message>
@@ -289,7 +289,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../bitcoingui.cpp" line="69"/>
         <source>Neuro Wallet</source>
-        <translation>Cartera PPCoin</translation>
+        <translation>Cartera Neuro</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="142"/>
@@ -350,7 +350,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../bitcoingui.cpp" line="201"/>
         <source>Send coins to a NeuroCoin address</source>
-        <translation>Envia monedas a una dirección PPCoin</translation>
+        <translation>Envia monedas a una dirección Neuro</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="206"/>
@@ -380,7 +380,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../bitcoingui.cpp" line="231"/>
         <source>Show information about NeuroCoin</source>
-        <translation>Muestra información sobre PPCoin</translation>
+        <translation>Muestra información sobre Neuro</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="233"/>
@@ -405,12 +405,12 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../bitcoingui.cpp" line="239"/>
         <source>Open &amp;NeuroCoin</source>
-        <translation>Abre &amp;PPCoin</translation>
+        <translation>Abre &amp;Neuro</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="240"/>
         <source>Show the NeuroCoin window</source>
-        <translation>Muestra la ventana de PPCoin</translation>
+        <translation>Muestra la ventana de Neuro</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="241"/>
@@ -485,12 +485,12 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../bitcoingui.cpp" line="407"/>
         <source>NeuroCoin-qt</source>
-        <translation>PPCoin-qt</translation>
+        <translation>NeuroCoin-qt</translation>
     </message>
     <message numerus="yes">
         <location filename="../bitcoingui.cpp" line="449"/>
         <source>%n active connection(s) to NeuroCoin network</source>
-        <translation><numerusform>%n conexión activa hacia la red PPCoin</numerusform><numerusform>%n conexiones activas hacia la red PPCoin</numerusform></translation>
+        <translation><numerusform>%n conexión activa hacia la red Neuro</numerusform><numerusform>%n conexiones activas hacia la red Neuro</numerusform></translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="475"/>
@@ -673,7 +673,7 @@ Dirección: %4</translation>
     <message>
         <location filename="../editaddressdialog.cpp" line="96"/>
         <source>The entered address &quot;%1&quot; is not a valid NeuroCoin address.</source>
-        <translation>La dirección introducida &quot;%1&quot; no es una dirección PPCoin valida.</translation>
+        <translation>La dirección introducida &quot;%1&quot; no es una dirección Neuro valida.</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="101"/>
@@ -691,12 +691,12 @@ Dirección: %4</translation>
     <message>
         <location filename="../optionsdialog.cpp" line="170"/>
         <source>&amp;Start NeuroCoin on window system startup</source>
-        <translation>&amp;Arranca PPCoin al iniciar el sistema</translation>
+        <translation>&amp;Arranca Neuro al iniciar el sistema</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="171"/>
         <source>Automatically start NeuroCoin after the computer is turned on</source>
-        <translation>Arranca PPCoin cuando se encienda el ordenador</translation>
+        <translation>Arranca Neuro cuando se encienda el ordenador</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="175"/>
@@ -736,7 +736,7 @@ Dirección: %4</translation>
     <message>
         <location filename="../optionsdialog.cpp" line="191"/>
         <source>Connect to the Bitcon network through a SOCKS4 proxy (e.g. when connecting through Tor)</source>
-        <translation>Conecta a la red PPCoin atraves de un proxy SOCKS4 (ej. para conectar con la red Tor)</translation>
+        <translation>Conecta a la red Neuro atraves de un proxy SOCKS4 (ej. para conectar con la red Tor)</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="196"/>
@@ -1177,7 +1177,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../sendcoinsentry.cpp" line="25"/>
         <source>Enter a NeuroCoin address (e.g. N1S17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduce una dirección PPCoin (ej. N1S17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Introduce una dirección Neuro (ej. N1S17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1629,7 +1629,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../bitcoinstrings.cpp" line="3"/>
         <source>NeuroCoin version</source>
-        <translation>Versión PPCoin</translation>
+        <translation>Versión Neuro</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="4"/>
@@ -1639,7 +1639,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../bitcoinstrings.cpp" line="5"/>
         <source>Send command to -server or neurocoind</source>
-        <translation>Envia comando a PPCoin lanzado con -server u ppcoind
+        <translation>Envia comando a Neuro lanzado con -server u neurocoind
 </translation>
     </message>
     <message>
@@ -1663,13 +1663,13 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../bitcoinstrings.cpp" line="9"/>
         <source>Specify configuration file (default: neurocoin.conf)</source>
-        <translation>Especifica archivo de configuración (predeterminado: PPCoin.conf)
+        <translation>Especifica archivo de configuración (predeterminado: neurocoin.conf)
 </translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="10"/>
         <source>Specify pid file (default: neurocoin.pid)</source>
-        <translation>Especifica archivo pid (predeterminado: PPCoin.pid)
+        <translation>Especifica archivo pid (predeterminado: neurocoin.pid)
 </translation>
     </message>
     <message>
@@ -1868,7 +1868,7 @@ p, li { white-space: pre-wrap; }
         <location filename="../bitcoinstrings.cpp" line="47"/>
         <source>
 SSL options: (see the NeuroCoin Wiki for SSL setup instructions)</source>
-        <translation>Opciones SSL: (ver la PPCoin Wiki para instrucciones de configuración SSL)
+        <translation>Opciones SSL: (ver la Neuro Wiki para instrucciones de configuración SSL)
 </translation>
     </message>
     <message>
@@ -1904,7 +1904,7 @@ SSL options: (see the NeuroCoin Wiki for SSL setup instructions)</source>
     <message>
         <location filename="../bitcoinstrings.cpp" line="57"/>
         <source>Cannot obtain a lock on data directory %s.  NeuroCoin is probably already running.</source>
-        <translation>No se puede obtener permiso de trabajo en la carpeta de datos %s. Probablemente PPCoin ya se está ejecutando.
+        <translation>No se puede obtener permiso de trabajo en la carpeta de datos %s. Probablemente Neuro ya se está ejecutando.
 </translation>
     </message>
     <message>
@@ -1990,12 +1990,12 @@ SSL options: (see the NeuroCoin Wiki for SSL setup instructions)</source>
     <message>
         <location filename="../bitcoinstrings.cpp" line="78"/>
         <source>Unable to bind to port %d on this computer.  NeuroCoin is probably already running.</source>
-        <translation>No es posible escuchar en el puerto %d en este ordenador. Probablemente PPCoin ya se está ejecutando.</translation>
+        <translation>No es posible escuchar en el puerto %d en este ordenador. Probablemente Neuro ya se está ejecutando.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="81"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct.  If your clock is wrong NeuroCoin will not work properly.</source>
-        <translation>Precaución: Por favor revisa que la fecha y hora de tu ordenador son correctas. Si tu reloj está mal PPCoin no funcionará correctamente.</translation>
+        <translation>Precaución: Por favor revisa que la fecha y hora de tu ordenador son correctas. Si tu reloj está mal Neuro no funcionará correctamente.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="84"/>
