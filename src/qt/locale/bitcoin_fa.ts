@@ -293,7 +293,7 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
 </context>
 <context>
-    <name>PPCoinGUI</name>
+    <name>NeuroGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="69"/>
         <source>Neuro Wallet</source>
@@ -1633,7 +1633,7 @@ p, li { white-space: pre-wrap; }⏎
     </message>
 </context>
 <context>
-    <name>PPCoin-core</name>
+    <name>NeuroCoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="3"/>
         <source>NeuroCoin version</source>
