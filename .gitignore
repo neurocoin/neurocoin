@@ -14,8 +14,10 @@ src/build.h
 #compilation and Qt preprocessor part
 *.qm
 Makefile
-neurocoin-qt
+/Makefile.Debug
+/Makefile.Release
 neuro-qt
+neuro-qt.exe
 #resources cpp
 qrc_*.cpp
 #qt creator
@@ -32,3 +34,4 @@ dist
 .idea
 cmake-build-debug
 CMakeLists.txt
+/object_script.*
