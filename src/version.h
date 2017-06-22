@@ -30,7 +30,7 @@ extern const std::string CLIENT_DATE;
 // ppcoin version - intended for display purpose ONLY
 #define NEUROCOIN_VERSION_MAJOR       0
 #define NEUROCOIN_VERSION_MINOR       1
-#define NEUROCOIN_VERSION_REVISION    1
+#define NEUROCOIN_VERSION_REVISION    2
 #define NEUROCOIN_VERSION_BUILD       0
 
 static const int NEUROCOIN_VERSION =
