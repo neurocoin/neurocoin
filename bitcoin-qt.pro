@@ -350,6 +350,8 @@ contains(RELEASE, 1) {
     !windows:!macx {
         # Linux: turn dynamic linking back on for c/c++ runtime libraries
         LIBS += -Wl,-Bdynamic
+        # prevents error "undefined reference to symbol dlclose@@GLIBC_2.2.5" when using `-Wl,-Bstatic`
+        LIBS += -ldl
     }
 }
 
