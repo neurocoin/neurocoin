@@ -20,8 +20,8 @@ OBJECTS_DIR = build
 MOC_DIR = build
 UI_DIR = build
 
-QMAKE_CXXFLAGS += -std=gnu++11
-QMAKE_LFLAGS += -Wl,--allow-multiple-definition
+!macx:QMAKE_CXXFLAGS += -std=gnu++11
+!macx:QMAKE_LFLAGS += -Wl,--allow-multiple-definition
 
 # use: qmake "RELEASE=1"
 contains(RELEASE, 1) {
