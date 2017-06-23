@@ -50,21 +50,21 @@ Windows build instructions:
 Mac OS X
 --------
 
-- Download and install the `Qt Mac OS X SDK`_. It is recommended to also install Apple's Xcode with UNIX tools.
-
-- Download and install `MacPorts`_.
-
+- Run a OS X Mavericks 10.9 VM (because of QT4 used in the project)
+- Install Apple's unix tools
+- Install MacPorts - www.macports.org
+- Official Qt - NOT necessary; instead we are getting it via ports here
+- XCode - NOT needed
 - Execute the following commands in a terminal to get the dependencies:
 
-::
+    sudo port selfupdate
+    sudo port install boost db48 openssl miniupnpc
+    sudo port install qt4-mac
+    cd neurocoin
+    qmake && make
 
-	sudo port selfupdate
-	sudo port install boost db48 miniupnpc
+- You can open the .pro file in Qt Creator and build as normal (cmd-B)
 
-- Open the .pro file in Qt Creator and build as normal (cmd-B)
-
-.. _`Qt Mac OS X SDK`: http://qt.nokia.com/downloads/sdk-mac-os-cpp
-.. _`MacPorts`: http://www.macports.org/install.php
 
 
 Build configuration options
