@@ -1,6 +1,8 @@
 # A proven way to build Neuro CLI daemon at Debian 7
 
-No UPNP support in this instruction. 
+For general instructions see `build-cli-unix.txt`.
+
+No UPNP support in this instruction, but it may be added.
 
 ## Main dependencies
 

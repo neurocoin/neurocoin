@@ -50,16 +50,21 @@ Windows build instructions:
 Mac OS X
 --------
 
-- Run a OS X Mavericks 10.9 VM (because of QT4 used in the project)
+The building process was tested on Mavericks. Using an older OS because of compatibility to Qt4 used in this project.
+
+- Run a OS X 10.9 Mavericks VM
 - Install Apple's unix tools
 - Install MacPorts - www.macports.org
-- Official Qt - NOT necessary; instead we are getting it via ports here
+- Official Qt distribution - NOT necessary; instead we are getting it via ports here
 - XCode - NOT needed
 - Execute the following commands in a terminal to get the dependencies:
 
     sudo port selfupdate
     sudo port install boost db48 openssl miniupnpc
     sudo port install qt4-mac
+
+- Build:
+
     cd neurocoin
     qmake && make
 

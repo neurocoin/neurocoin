@@ -13,7 +13,7 @@ src/build.h
 .ppcoin
 #compilation and Qt preprocessor part
 *.qm
-Makefile
+/Makefile
 /Makefile.Debug
 /Makefile.Release
 neuro-qt
