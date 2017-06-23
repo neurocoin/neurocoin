@@ -335,7 +335,7 @@ macx:HEADERS += src/qt/macdockiconhandler.h
 macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit
 macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
-macx:ICON = src/qt/res/icons/ppcoin.icns
+macx:ICON = src/qt/res/icons/neuro.icns
 macx:TARGET = "NeuroWallet"
 
 # Set libraries and includes at end, to use platform-defined defaults if not overridden
